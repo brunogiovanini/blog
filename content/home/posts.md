@@ -7,10 +7,10 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight: 60
+weight: 20
 
-title: Recent Posts
-subtitle:
+title: Recent posts
+subtitle: Reflections and tips and tricks.
 
 content:
   # Page type to display. E.g. post, talk, publication...
