@@ -9,7 +9,7 @@ links:
   icon_pack: fa
   name: See demo
   url: #
-summary: An web based shiny app to explore and visualize your data from the My Jump 2 export file. Have all different metrics in one place with a friendly interface.
+summary: An web-based shiny app to explore and visualize your data from the My Jump 2 export file. Have all different metrics in one place with a friendly interface.
 tags:
 - R
 title: MyJump Hub
