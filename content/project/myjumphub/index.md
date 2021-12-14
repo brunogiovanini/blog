@@ -1,6 +1,5 @@
 ---
 date: "2022-01-01T00:00:00Z"
-external_link: ""
 image:
   caption: 
   focal_point: 
