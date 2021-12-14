@@ -9,7 +9,6 @@ links:
   icon_pack: fab
   name: Follow
   url: https://twitter.com/georgecushen
-slides: example
 summary: An web-based shiny app to explore and visualize the results from your My Jump 2 export file.
 tags:
 - Deep Learning
