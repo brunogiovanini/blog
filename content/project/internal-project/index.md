@@ -5,13 +5,13 @@ image:
   caption: ""
   focal_point: Smart
 links:
-- icon: twitter
+- icon: youtube
   icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+  name: See demo
+  url: "#"
 summary: An web-based shiny app to explore and visualize the results from your My Jump 2 export file.
 tags:
-- Deep Learning
+- R
 title: MyJump Hub
 url_code: ""
 url_pdf: ""
