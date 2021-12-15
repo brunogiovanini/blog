@@ -21,6 +21,6 @@ url_video: ""
 
 > #### This is an web-based shiny app to explore and visualize your data from the My Jump 2 export file.
 
-#### Making of
+####  Making of
 
 When I started to use the app My Jump 2 (*shout out to the genius [\@balsalobrephd](https://twitter.com/balsalobrephd)*), I was usually analyzing My Jump 2 results writing down the screen results and then copying into some sheet app.
