@@ -21,7 +21,7 @@ publication: '*Journal of Strength & Conditioning Research*'
 publication_short: ""
 publication_types:
 - "2"
-publishDate: "2022-01-01T00:00:00Z"
+publishDate: "2021-12-01T00:00:00Z"
 slides: example
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus
   ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
