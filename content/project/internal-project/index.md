@@ -1,13 +1,13 @@
 ---
-date: "2016-04-27T00:00:00Z"
+date: "2022-01-01T00:00:00Z"
 external_link: ""
 image:
   caption: ""
   focal_point: Smart
 links:
-- icon: youtube
-  icon_pack: fab
-  name: See demo
+- icon: star
+  icon_pack: fa
+  name: ''
   url: "#"
 summary: An web-based shiny app to explore and visualize the results from your My Jump 2 export file.
 tags:
