@@ -8,79 +8,54 @@ draft: false
 featured: false
 image:
   focal_point: ""
-  placement: 2
+  placement: 1
   preview_only: true
-lastmod: "2020-12-13T00:00:00Z"
+lastmod: "2021-01-07T00:00:00Z"
 projects: []
-subtitle: "Welcome \U0001F44B We know that first impressions are important, so we've
-  populated your new site with some initial content to help you get familiar with
-  everything in no time."
-summary: "Welcome \U0001F44B We know that first impressions are important, so we've
-  populated your new site with some initial content to help you get familiar with
-  everything in no time."
+subtitle: "This tutorial will show you how to build a simple and practical monitoring tool to assess well-being and readiness score of your athletes."
+summary: "This tutorial will show you how to build a simple and practical monitoring tool to assess well-being and readiness score of your athletes."
 tags:
 - R
 - Tutorial
-title: Monitoring readiness and wellbeing scores using Google Sheets and R
+title: Monitoring readiness and well-being scores using Google Sheets and R Shiny
 ---
 
 ## Overview
 
-1.  The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site
-2.  The template can be modified and customised to suit your needs. It's a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a **no-code solution (write in Markdown and customize with YAML parameters)** and having **flexibility to later add even deeper personalization with HTML and CSS**
-3.  You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more
+Monitoring is one of the most important aspects of training. Keeping track of what is going on with our athletes (in different domains) is a the first step to manage our intervention. The simplest way to do so is by using valid questionnaires, which requires little resource. Beyond collecting data, it is important to transfer this data into information that can be easily visualized and used in a daily basis. That's what this tutorial is about.
 
-## Get Started
+In this tutorial, we'll cover:
 
--   👉 [**Create a new site**](https://wowchemy.com/templates/)
--   📚 [**Personalize your site**](https://wowchemy.com/docs/)
--   💬 [Chat with the **Wowchemy community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
--   🐦 Twitter: [\@wowchemy](https://twitter.com/wowchemy) [\@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=(%23MadeWithWowchemy%20OR%20%23MadeWithAcademic)&src=typed_query)
--   💡 [Request a **feature** or report a **bug** for *Wowchemy*](https://github.com/wowchemy/wowchemy-hugo-modules/issues)
--   ⬆️ **Updating Wowchemy?** View the [Update Guide](https://wowchemy.com/docs/guide/update/) and [Release Notes](https://wowchemy.com/updates/)
+1.  How to build a well-being and readiness questionnaire using Google Forms
+2.  How to build a simple Shiny app that will automatically read the responses from your Google Sheets and resume into useful
 
-## Crowd-funded open-source software
+------------------------------------------------------------------------
 
-To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.
+## First things first
 
-### [❤️ Click here to become a sponsor and help support Wowchemy's future ❤️](https://wowchemy.com/plans/)
+-   👉 If you are unfamiliar, you need to download [**R**](https://cran.r-project.org/) and [**RStudio**](https://www.rstudio.com/products/rstudio/download/).
 
-As a token of appreciation for sponsoring, you can **unlock [these](https://wowchemy.com/plans/) awesome rewards and extra features 🦄✨**
+-   ▶️ [**This is tutorial is now also available on YouTube, check it out.**](#)
 
-## Ecosystem
+------------------------------------------------------------------------
 
--   [**Hugo Academic CLI**](https://github.com/wowchemy/hugo-academic-cli)**:** Automatically import publications from BibTeX
+### Creating the questionnaire using Google Forms
 
-## Inspiration
+We need to start creating our questionnaire using the [**Google Forms tool**](https://docs.google.com/forms/). This tool is pretty straight-forward and you can customize your questionnaire in many ways.
 
-[Check out the latest **demo**](https://academic-demo.netlify.com/) of what you'll get in less than 10 minutes, or [view the **showcase**](https://wowchemy.com/user-stories/) of personal, project, and business sites.
+I will create a questionnaire including five domains of well-being and readiness, named: sleep quality, stress, soreness, fatigue and mood. The scores of each domain will be assessed using a seven-point Likert scale (from 1 to 7).
 
-## Features
+Keep in mind that you can change these domains and the score scale to fit your purposes and references.
 
--   **Page builder** - Create *anything* with [**widgets**](https://wowchemy.com/docs/page-builder/) and [**elements**](https://wowchemy.com/docs/writing-markdown-latex/)
--   **Edit any type of content** - Blog posts, publications, talks, slides, projects, and more!
--   **Create content** in [**Markdown**](https://wowchemy.com/docs/writing-markdown-latex/), [**Jupyter**](https://wowchemy.com/docs/import/jupyter/), or [**RStudio**](https://wowchemy.com/docs/install-locally/)
--   **Plugin System** - Fully customizable [**color** and **font themes**](https://wowchemy.com/docs/customization/)
--   **Display Code and Math** - Code highlighting and [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics) supported
--   **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more!
--   **Beautiful Site** - Simple and refreshing one page design
--   **Industry-Leading SEO** - Help get your website found on search engines and social media
--   **Media Galleries** - Display your images and videos with captions in a customizable gallery
--   **Mobile Friendly** - Look amazing on every screen with a mobile friendly version of your site
--   **Multi-language** - 34+ language packs including English, 中文, and Português
--   **Multi-user** - Each author gets their own profile page
--   **Privacy Pack** - Assists with GDPR
--   **Stand Out** - Bring your site to life with animation, parallax backgrounds, and scroll effects
--   **One-Click Deployment** - No servers. No databases. Only files.
+In the first section of my questionnaire, I have included only two questions:
 
-## Themes
+1.  **Name** (so athletes can identify themselves when answering)
+2.  **Date** (to informs the date corresponding to that response)
 
-Wowchemy and its templates come with **automatic day (light) and night (dark) mode** built-in. Alternatively, visitors can choose their preferred mode - click the moon icon in the top right of the [Demo](https://academic-demo.netlify.com/) to see it in action! Day/night mode can also be disabled by the site admin in `params.toml`.
+These two questions are marked as mandatory so the athlete can advance to next section of the questionnaire.
 
-[Choose a stunning **theme** and **font**](https://wowchemy.com/docs/customization) for your site. Themes are fully customizable.
+{{< spoiler text="So far, my questionnaire looks like this: (click to see)" >}}
+![](questionnaire-firstsection.png)
+{{< /spoiler >}}
 
-## License
-
-Copyright 2016-present [George Cushen](https://georgecushen.com).
-
-Released under the [MIT](https://github.com/wowchemy/wowchemy-hugo-modules/blob/master/LICENSE.md) license.
+In the next section, I've added the questions of each domain using the "linear scale" option, with scores ranging from 1 to 7.
