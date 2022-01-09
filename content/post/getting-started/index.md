@@ -29,7 +29,7 @@ In this tutorial, we'll cover:
 1.  How to build a well-being and readiness questionnaire using Google Forms
 2.  How to build a simple Shiny app that will automatically read the responses from your Google Sheets and resume into useful
 
-------------------------------------------------------------------------
+ 
 
 ## First things first
 
@@ -37,9 +37,9 @@ In this tutorial, we'll cover:
 
 -   ▶️ [**This is tutorial is now also available on YouTube, check it out.**](#)
 
-------------------------------------------------------------------------
+ 
 
-### Creating the questionnaire using Google Forms
+## Creating the questionnaire using Google Forms
 
 We need to start creating our questionnaire using the [**Google Forms tool**](https://docs.google.com/forms/). This tool is pretty straight-forward and you can customize your questionnaire in many ways.
 
@@ -59,3 +59,33 @@ These two questions are marked as mandatory so the athlete can advance to next s
 {{< /spoiler >}}
 
 In the next section, I've added the questions of each domain using the "linear scale" option, with scores ranging from 1 to 7.
+
+{{< spoiler text="They're going to look like this: (click to see)" >}}
+
+![](questionnaire-secondsection.png)
+
+{{< /spoiler >}}
+
+You can notice that I've added an image to describe each score associated with a number. I've even added some colors to it. This may be particularly interesting when putting young athletes in contact with questionnaires like this for the first time. I wouldn't recommend this with older/experienced athletes.
+
+{{< spoiler text="Ultimately, it will look like this for the athletes: (click to see)" >}}
+
+![](questionnaire-finallook.png)
+
+{{< /spoiler >}}
+
+### Looking at the data
+
+Once our questionnaire have some responses, we can look at them linking our questionnaire to a Google Sheet. This can be done clicking in the Google Sheets icon in the answers tab in the settings. We are pulling our data from this Google Sheet in next steps.
+
+{{< spoiler text="Looking at how some data looks like: (click to see)" >}}
+
+![](data-example.png)
+
+{{< /spoiler >}}
+
+### Building our Shiny app
+
+Now that we have a sound questionnaire and plenty of responses to analyze, it is time to bring our problem to R.
+
+In R
