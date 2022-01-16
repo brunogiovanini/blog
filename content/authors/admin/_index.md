@@ -40,6 +40,6 @@ superuser: true
 title: Bruno Giovanini
 ---
 
-Hi! I am currently a performance coach at [Londrina Basketball](https://www.instagram.com/londrinabasketball/) (Londrina, Brazil). I have been working with professional and young (U15 and U17) basketball athletes since 2019. My research interests include load monitoring, biomechanics and performance analysis in team sports. Below you may see my most recent projects exploring sports performance with data-driven approaches using R programming language.
+Hi! I am currently a performance coach at [Londrina Basketball](https://www.instagram.com/londrinabasketball/) (Londrina, Brazil). I have been working with professional and young (U15 and U17) basketball athletes since 2019. My research interests include load monitoring, biomechanics and performance analysis in team sports. In this website you may see my most recent projects exploring sports performance with data-driven approaches using R programming language.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
