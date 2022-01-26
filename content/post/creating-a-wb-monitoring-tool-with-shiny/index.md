@@ -27,15 +27,13 @@ Monitoring is one of the most important aspects of training. Keeping track of wh
 In this tutorial, we'll cover:
 
 1.  How to build a well-being and readiness questionnaire using Google Forms
-2.  How to build a simple Shiny app that will automatically read the responses from your Google Sheets and resume into useful
+2.  How to build a simple Shiny app that will automatically read the responses from your Google Sheets and resume into useful information.
 
  
 
 ## First things first
 
--   👉 If you are unfamiliar, you need to download [**R**](https://cran.r-project.org/) and [**RStudio**](https://www.rstudio.com/products/rstudio/download/).
-
--   ▶️ [**This is tutorial is now also available on YouTube, check it out.**](#)
+-   👉 If you are unfamiliar, you need to download and install [**R**](https://cran.r-project.org/) and [**RStudio**](https://www.rstudio.com/products/rstudio/download/). R is the programming language and RStudio the IDE where we will set things up.
 
  
 
@@ -50,7 +48,7 @@ Keep in mind that you can change these domains and the score scale to fit your p
 In the first section of my questionnaire, I have included only two questions:
 
 1.  **Name** (so athletes can identify themselves when answering)
-2.  **Date** (to informs the date corresponding to that response)
+2.  **Date** (to inform the date corresponding to that response)
 
 These two questions are marked as mandatory so the athlete can advance to next section of the questionnaire.
 
@@ -87,5 +85,3 @@ Once our questionnaire have some responses, we can look at them linking our ques
 ### Building our Shiny app
 
 Now that we have a sound questionnaire and plenty of responses to analyze, it is time to bring our problem to R.
-
-In R
